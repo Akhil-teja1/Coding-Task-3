@@ -1,0 +1,26 @@
+import java.util.*;
+public class ObjectStorage 
+{
+    public static void main(String[] args) 
+    {
+        Set<Integer> hashset = new HashSet<>();
+        hashset.add(1);
+        hashset.add(2);
+        hashset.add(3);
+        hashset.add(4);
+        hashset.add(5);
+        hashset.add(6);
+        // Adding duplicate elements has no effect 
+        hashset.add(3);
+        hashset.add(4);
+        // As it implements the Set Interface, duplicate values are not allowed.
+         System.out.println("Insertion of Elements ");
+        System.out.println("HashSet : " + hashset);
+        System.out.print("HashSet Using for-Each : ");
+            for(Integer numbers:hashset)
+            {
+                System.out.print(numbers);
+                System.out.print(",");
+            }
+    } 
+}    
